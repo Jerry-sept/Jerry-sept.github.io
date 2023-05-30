@@ -1,0 +1,68 @@
+html,body,div,h1{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#doge-bg{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    border-top: 5px #f6e05a dashed;
+    border-bottom: 5px #f6e05a dashed;
+}
+
+header{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 10em;
+    text-align: center;
+}
+
+h1{
+    display: flex;
+    width: 300px;
+    height: 54px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+h1::before,h1::after{
+    margin: 0 5px;
+    content: '';
+    width: 50px;
+    height: 54px;
+    background: 
+        url('/img/spinning-doge.jpg')
+        no-repeat
+        ;
+    display: inline-block;
+
+}
+
+.doge{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 46px;
+    left: 100%;
+    width: 50px;
+    height: 54px;
+    background-image: url('/img/spinning-doge.jpg');
+}
+
+#button{
+    margin: 15px auto;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    background-color: slateblue;
+    border-radius: 5px;
+    cursor:pointer;
+}
